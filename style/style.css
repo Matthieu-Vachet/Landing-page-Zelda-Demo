@@ -86,6 +86,7 @@ header nav .nav-menu-droite button:hover {
 
 .presentation .produit-presentation {
 width: 100%;
+flex-shrink: 3;
 }
 
 .presentation .produit-presentation h1 {
@@ -104,8 +105,9 @@ text-transform: none;
 
 .presentation .produit-presentation button {
 margin-top: 20px;
+font-family: "zelda-botw";
 padding: 15px 20px;
-font-size: 15px;
+font-size: 25px;
 border-radius: 20px 10px 20px 10px;
 border: none;
 outline: none;
@@ -113,8 +115,23 @@ cursor: pointer;
 }
 
 
-.presentation .image-presentation {
-    width: 80%;
+.presentation .image-presentation img {
+    width: 100%;
+}
+
+.first .produit-presentation button {
+background-color: #432f0f;
+color: white;
+border: solid 2px white;
+transition: border-radius 0.5s, color 0.5s, background-color 0.5s, border-radius 0.5s;
+}
+
+.first .produit-presentation button:hover {
+color: #432f0f;
+background-color: #536f50;
+border: solid 2px #432f0f;
+border-radius: 10px 20px 10px 20px; ;
+
 }
 
 .first .produit-presentation .small-images {
@@ -127,11 +144,16 @@ align-items: center;
 .first .produit-presentation .small-images .small {
 padding: 20px;
 background-color: rgba(130, 130, 130, 0.37);
-
 margin: 0 15px 15px 0;
 border-radius: 20px;
-
+transition: filter  0.5s;
 }
+
+.first .produit-presentation .small-images .small:hover{
+filter: brightness(50%);
+}
+
+
 
 .first .produit-presentation .small-images .small img {
 width: 200px;
