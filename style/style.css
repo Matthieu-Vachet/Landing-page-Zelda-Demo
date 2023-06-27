@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "zelda-botw";
+  src: url(/fonts/The\ Wild\ Breath\ of\ Zelda.otf);
+}
+
+body {
+  margin: 0;
+  font-family: zelda-botw;
+  color: #fff;
+}
+
+header {
+  background: #5a3f37; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #536f50,
+    #767676,
+    #86a5a9,
+    #92c582,
+    #fdffe0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #536f50,
+    #767676,
+    #86a5a9,
+    #92c582,
+    #fdffe0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header nav {
+  padding: 30px 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo-zelda {
+  padding: 0;
+  margin: 0;
+  width: 250px;
+}
+
+header nav .nav-menu-droite {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-menu-droite p {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fdffe0;
+}
+
+header nav .nav-menu-droite p:hover {
+  color: #6c5f32;
+}
+
+header nav .nav-menu-droite button {
+  padding: 5px 10px 5px 10px;
+  background-color: inherit;
+  color: #432f0f;
+  font-family: zelda-botw;
+  border: solid #432f0f 2px;
+  border-radius: 20px 10px 20px 10px;
+  font-size: 30px;
+  text-align: center;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+header nav .nav-menu-droite button:hover {
+  color: inherit;
+  background-color: #432f0f;
+}
+
+.presentation {
+  padding: 30px 5%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation .produit-presentation {
+width: 100%;
+}
+
+.presentation .produit-presentation h1 {
+margin: 0;
+font-size: 3vw;
+text-transform: uppercase;
+width: 90%;
+}
+
+.presentation .produit-presentation p {
+color: #e9e9e9;
+font-size: 1.5vw;
+text-transform: none;
+
+}
+
+.presentation .produit-presentation button {
+margin-top: 20px;
+padding: 15px 20px;
+font-size: 15px;
+border-radius: 20px 10px 20px 10px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+
+.presentation .image-presentation {
+    width: 80%;
+}
+
+.first .produit-presentation .small-images {
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.first .produit-presentation .small-images .small {
+padding: 20px;
+background-color: rgba(130, 130, 130, 0.37);
+
+margin: 0 15px 15px 0;
+border-radius: 20px;
+
+}
+
+.first .produit-presentation .small-images .small img {
+width: 200px;
+}
+
+@media screen and (max-width: 640px) {
+  header nav .logo-zelda {
+    height: 50%;
+    width: 50%;
+  }
+  header nav .nav-menu-droite p {
+    display: none;
+  }
+}
